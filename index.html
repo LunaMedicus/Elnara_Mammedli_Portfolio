@@ -1,13 +1,629 @@
-I need to first retrieve the current content of the file to make the updates. However, since I don't have a tool to read file contents, I'll need you to provide the current content of the index.html file so I can make the requested changes and update it.
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elnara Mammadli | Business Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        mckinsey: {
+                            navy: '#051c2c',
+                            blue: '#005eb8',
+                            light: '#f3f4f6',
+                            text: '#333333',
+                            gray: '#666666'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .profile-image {
+            object-position: center top;
+        }
+    </style>
+</head>
+<body class="bg-white text-mckinsey-text antialiased font-sans">
 
-Alternatively, if you can share the current file content, I can apply all these changes:
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md z-50 border-b border-gray-100 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="font-serif text-2xl text-mckinsey-navy font-bold tracking-tight">EM<span class="text-mckinsey-blue">.</span></a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-sm font-medium text-gray-600 hover:text-mckinsey-blue transition-colors">About</a>
+                    <a href="#experience" class="text-sm font-medium text-gray-600 hover:text-mckinsey-blue transition-colors">Experience</a>
+                    <a href="#portfolio" class="text-sm font-medium text-gray-600 hover:text-mckinsey-blue transition-colors">Selected Work</a>
+                    <a href="#clients" class="text-sm font-medium text-gray-600 hover:text-mckinsey-blue transition-colors">Clients</a>
+                    <a href="#contact" class="text-sm font-medium text-gray-600 hover:text-mckinsey-blue transition-colors">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-500 hover:text-mckinsey-navy focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-1. **Title change:** "Global Brand Launch: Unilever & JTI" → "Global Brand Launch: Unilever & Henkel"
+    <!-- Hero Section -->
+    <header class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-mckinsey-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1 fade-in-up">
+                    <p class="text-mckinsey-blue font-semibold tracking-wider uppercase mb-4 text-sm">Business Development & Strategy Executive</p>
+                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-mckinsey-navy leading-tight mb-6">
+                        Strategic Growth Across <br/> <span class="italic text-mckinsey-blue">Every Major Sector</span>
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed max-w-lg">
+                        A powerhouse executive with 20+ years of experience spanning the full business spectrum. From securing multi-million dollar Oil & Gas contracts to launching global FMCG brands and managing luxury retail, I deliver operational excellence and measurable growth.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#portfolio" class="px-8 py-4 bg-mckinsey-blue text-white font-medium rounded-sm hover:bg-blue-700 transition-colors shadow-lg text-center">
+                            View Case Studies
+                        </a>
+                        <a href="#contact" class="px-8 py-4 bg-white text-mckinsey-navy border border-gray-300 font-medium rounded-sm hover:bg-gray-50 transition-colors text-center">
+                            Contact Me
+                        </a>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2 flex justify-center lg:justify-end fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="relative">
+                        <div class="absolute -inset-4 bg-mckinsey-blue/10 rounded-lg transform translate-x-4 translate-y-4"></div>
+                        <div class="relative w-72 h-96 sm:w-80 sm:h-[28rem] lg:w-96 lg:h-[32rem] overflow-hidden rounded-lg shadow-2xl">
+                            <img src="https://storage.rxresu.me/cma2nqc582y3qq9p3xipfgtrg/pictures/guu54m8zqztfxj81cq34qtuc.jpg" alt="Elnara Mammadli" class="w-full h-full object-cover profile-image grayscale hover:grayscale-0 transition-all duration-700">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-2. **Description change:** "Launched Dove/Rexona and JTI into the market. Secured 60% aerosol shelf share and implemented 4-tier outlet segmentation." → "Launched Dove/Rexona and Henkel Laundry & Detergents (Persil, Clin, Bref) into the Azerbaijan market. Secured 60% aerosol shelf share and executed the 2009 Master Plan."
+    <!-- Impact Stats -->
+    <section class="bg-mckinsey-navy py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center text-white">
+                <div class="p-4">
+                    <div class="text-4xl font-serif font-bold mb-2 text-mckinsey-blue">20+</div>
+                    <div class="text-sm uppercase tracking-wider opacity-80">Years Experience</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl font-serif font-bold mb-2 text-mckinsey-blue">$1.2M+</div>
+                    <div class="text-sm uppercase tracking-wider opacity-80">Annual Contract Value</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl font-serif font-bold mb-2 text-mckinsey-blue">70+</div>
+                    <div class="text-sm uppercase tracking-wider opacity-80">Brands Managed</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl font-serif font-bold mb-2 text-mckinsey-blue">100%</div>
+                    <div class="text-sm uppercase tracking-wider opacity-80">Client Retention</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-3. **Label change:** "Partnership" → "Pricing Strategy"
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-3xl text-mckinsey-navy font-bold">About Me</h2>
+                <div class="h-1 w-16 bg-mckinsey-blue mx-auto mt-4"></div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-xl font-serif font-bold text-mckinsey-navy mb-4">Core Competencies</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-mckinsey-blue mr-3"></i>
+                            <span>Business Development & Strategic Partnerships</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-mckinsey-blue mr-3"></i>
+                            <span>Trade Marketing & Category Management</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-mckinsey-blue mr-3"></i>
+                            <span>Visual Merchandising & Retail Strategy</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-mckinsey-blue mr-3"></i>
+                            <span>FMCG Distribution & Supply Chain</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-mckinsey-blue mr-3"></i>
+                            <span>Campaign Management & Creative Direction</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-mckinsey-blue mr-3"></i>
+                            <span>Contract Negotiation & Client Relations</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-mckinsey-blue mr-3"></i>
+                            <span>Market Entry & Brand Launch Strategy</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-mckinsey-blue mr-3"></i>
+                            <span>Occupational Health & Industrial Compliance</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-serif font-bold text-mckinsey-navy mb-4">Industry Expertise</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-mckinsey-light p-4 rounded-lg text-center">
+                            <i class="fas fa-oil-can text-mckinsey-blue text-2xl mb-2"></i>
+                            <p class="text-sm font-medium">Oil & Gas</p>
+                        </div>
+                        <div class="bg-mckinsey-light p-4 rounded-lg text-center">
+                            <i class="fas fa-shopping-cart text-mckinsey-blue text-2xl mb-2"></i>
+                            <p class="text-sm font-medium">FMCG & Retail</p>
+                        </div>
+                        <div class="bg-mckinsey-light p-4 rounded-lg text-center">
+                            <i class="fas fa-gem text-mckinsey-blue text-2xl mb-2"></i>
+                            <p class="text-sm font-medium">Luxury Retail</p>
+                        </div>
+                        <div class="bg-mckinsey-light p-4 rounded-lg text-center">
+                            <i class="fas fa-mobile-alt text-mckinsey-blue text-2xl mb-2"></i>
+                            <p class="text-sm font-medium">Telecommunications</p>
+                        </div>
+                        <div class="bg-mckinsey-light p-4 rounded-lg text-center">
+                            <i class="fas fa-heartbeat text-mckinsey-blue text-2xl mb-2"></i>
+                            <p class="text-sm font-medium">Healthcare Services</p>
+                        </div>
+                        <div class="bg-mckinsey-light p-4 rounded-lg text-center">
+                            <i class="fas fa-landmark text-mckinsey-blue text-2xl mb-2"></i>
+                            <p class="text-sm font-medium">Diplomatic Services</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-4. **Partnership/Pricing Strategy content change:** "Collaborated with McCann Erickson on creative strategy." → "Aggressive positioning: -2% to -4% vs competitors."
+    <!-- Detailed Client List -->
+    <section id="clients" class="py-20 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-3xl text-mckinsey-navy font-bold">Trusted by Global Industry Leaders</h2>
+                <p class="mt-4 text-gray-600">A comprehensive history of partnerships across energy, retail, telecommunications, and diplomatic sectors.</p>
+            </div>
 
-Could you please provide the current content of the index.html file so I can apply these updates?
+            <!-- Energy & Industrial -->
+            <div class="mb-12">
+                <h3 class="text-sm font-bold text-mckinsey-blue uppercase tracking-widest mb-6 border-b border-gray-200 pb-2">Energy, Mining & Infrastructure (EMI)</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-y-4 gap-x-8 text-sm font-medium text-gray-600">
+                    <span>BP</span>
+                    <span>MAERSK DRILLING</span>
+                    <span>SCHLUMBERGER</span>
+                    <span>HALLIBURTON</span>
+                    <span>KCA DEUTAG</span>
+                    <span>NALCO</span>
+                    <span>LUKOIL</span>
+                    <span>CNPC</span>
+                    <span>STATOIL</span>
+                    <span>AMEC</span>
+                    <span>PETROFAC</span>
+                    <span>PETROPLAN</span>
+                    <span>SAIPEM</span>
+                    <span>McDERMOTT</span>
+                    <span>KBR</span>
+                    <span>ROLLS-ROYCE</span>
+                    <span>SWIFT TECHNICAL</span>
+                    <span>ANSALDO</span>
+                    <span>STAR GULF</span>
+                    <span>FIRCROFT</span>
+                    <span>VETCO GRAY</span>
+                    <span>SOCAR CAPE</span>
+                    <span>FUGRO SURVEY</span>
+                    <span>WESTERN-GECO</span>
+                    <span>BAHAR ENERGY</span>
+                    <span>MI DRILLING</span>
+                    <span>ORION PROJECTS</span>
+                    <span>FRANK'S INT.</span>
+                    <span>BRIGGS MARINE</span>
+                    <span>ACE FORWARDING</span>
+                    <span>VAN OORD</span>
+                    <span>SUMITOMO CORP</span>
+                    <span>ACONA WELLPRO</span>
+                    <span>WEUS HOLDING</span>
+                    <span>FALCK CASPIAN</span>
+                    <span>CNIM</span>
+                    <span>OIL ELECTRO</span>
+                    <span>RAPID SOLUTIONS</span>
+                    <span>ENERMECH</span>
+                    <span>RLG INT.</span>
+                </div>
+            </div>
+
+            <!-- FMCG, Retail & Luxury -->
+            <div class="mb-12">
+                <h3 class="text-sm font-bold text-mckinsey-blue uppercase tracking-widest mb-6 border-b border-gray-200 pb-2">FMCG, Personal Care & Luxury Retail</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-y-4 gap-x-8 text-sm font-medium text-gray-600">
+                    <span class="text-mckinsey-navy font-bold">UNILEVER</span>
+                    <span class="text-mckinsey-navy font-bold">KRAFT FOODS</span>
+                    <span class="text-mckinsey-navy font-bold">JTI</span>
+                    <span class="text-mckinsey-navy font-bold">HENKEL</span>
+                    <span class="text-mckinsey-navy font-bold">AZERSUN</span>
+                    <span>ITALDIZAYN</span>
+                    <span>COINCASA</span>
+                    <span>PREDO</span>
+                    <span>NEWDAY</span>
+                    <span>SLIPERS</span>
+                    <span>McCANN ERICKSON</span>
+                    <span>DOVE</span>
+                    <span>REXONA</span>
+                    <span>ELIDOR</span>
+                    <span>CLEAR</span>
+                    <span>SIGNAL</span>
+                    <span>DOMESTOS</span>
+                    <span>CIF</span>
+                    <span>LIPTON</span>
+                    <span>KNORR</span>
+                    <span>PERSIL</span>
+                    <span>CLIN</span>
+                    <span>BREF</span>
+                    <span>PRIL</span>
+                    <span>VERNEL</span>
+                    <span>JACOBS</span>
+                    <span>ALPEN GOLD</span>
+                    <span>MILKA</span>
+                    <span>TOBLERONE</span>
+                    <span>AZERCAY</span>
+                    <span>BIZIM TARLA</span>
+                    <span>FINAL</span>
+                    <span>SAVILLE</span>
+                    <span>RICHMOND</span>
+                    <span>SUPER SUN</span>
+                    <span>PASHA TEA</span>
+                    <span>MARYAM</span>
+                    <span>SMART (Ozden)</span>
+                    <span>VILO</span>
+                    <span>POLOGARAGE</span>
+                    <span>MYBRANDS</span>
+                    <span>ADIDAS (Retail)</span>
+                </div>
+            </div>
+
+            <!-- Diplomatic & Corporate Services -->
+            <div>
+                <h3 class="text-sm font-bold text-mckinsey-blue uppercase tracking-widest mb-6 border-b border-gray-200 pb-2">Telecommunications, Diplomatic & Corporate</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-y-4 gap-x-8 text-sm font-medium text-gray-600">
+                    <span class="text-mckinsey-navy font-bold">BAKCELL</span>
+                    <span>US EMBASSY</span>
+                    <span>UK EMBASSY</span>
+                    <span>EBRD</span>
+                    <span>PwC</span>
+                    <span>FAIRMONT BAKU</span>
+                    <span>ARAMARK</span>
+                    <span>ESS SUPPORT</span>
+                    <span>AXA MBASK</span>
+                    <span>HRC</span>
+                    <span>FSSA MMC</span>
+                    <span>ASCO CASPIAN</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="experience" class="py-20 bg-gray-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="font-serif text-3xl text-mckinsey-navy font-bold mb-12 text-center">Experience Highlights</h2>
+            <div class="relative border-l-2 border-gray-200 ml-4 lg:ml-0 space-y-12">
+                
+                <!-- Role 1: Intl SOS / Nordic -->
+                <div class="relative lg:pl-12">
+                    <div class="absolute -left-[9px] top-0 h-5 w-5 rounded-full bg-mckinsey-blue border-4 border-white"></div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 hover:border-mckinsey-blue/30 transition-colors">
+                        <span class="text-sm font-semibold text-mckinsey-blue uppercase tracking-wide">Occupational Health & Security Services</span>
+                        <h3 class="text-xl font-serif font-bold text-mckinsey-navy mt-1">Business Development Manager (EMI Segment)</h3>
+                        <p class="text-gray-500 text-sm mb-4">Focus: Strategic Expansion & Financial Efficiency | International SOS / Nordic Health | 2013</p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2 text-sm">
+                            <li><strong>Cross-Border Win:</strong> Led the successful bid for the <strong>KCA DEUTAG</strong> account by expediting the development of Medical Emergency Response Plans (MERPs).</li>
+                            <li>Executed the <strong>"Clinic Plan" Standardization Strategy</strong>, rolling out unified agreements to 7+ majors including <strong>Lukoil, CNPC, and Halliburton</strong>.</li>
+                            <li>Secured Occupational Health contracts for <strong>Maersk</strong>, <strong>Nalco</strong>, and <strong>Swift</strong>, ensuring "Fitness to Work" compliance.</li>
+                            <li>Managed the <strong>Star Gulf</strong> medical staffing model (24/7 coverage, $511k contract).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Role 2: FMCG Trade Marketing -->
+                <div class="relative lg:pl-12">
+                    <div class="absolute -left-[9px] top-0 h-5 w-5 rounded-full bg-mckinsey-navy border-4 border-white"></div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 hover:border-mckinsey-blue/30 transition-colors">
+                        <span class="text-sm font-semibold text-mckinsey-navy uppercase tracking-wide">FMCG & Trade Marketing</span>
+                        <h3 class="text-xl font-serif font-bold text-mckinsey-navy mt-1">Trade Marketing Manager / Brand Lead</h3>
+                        <p class="text-gray-500 text-sm mb-4">Focus: Azersun, Unilever, Henkel, JTI | Azerbaijan</p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2 text-sm">
+                            <li><strong>Azersun:</strong> Developed tiered "Ramazan Packages" (Bereket, Lezzet, Ziyafet) and managed a 3-tier product segmentation for 300+ SKUs.</li>
+                            <li><strong>Unilever:</strong> Orchestrated the market launch of <strong>Dove</strong> and <strong>Rexona</strong>, securing 60% shelf share for aerosols.</li>
+                            <li><strong>JTI:</strong> Partnered with <strong>McCann Erickson</strong> to drive market entry, utilizing sophisticated outlet segmentation (Core/Key/Premium/Prestige).</li>
+                            <li><strong>Henkel:</strong> Executed the "2009 Master Plan" for Persil, Clin, and Bref, implementing aggressive pricing strategies (-2% to -4% vs competitors).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Role 3: Retail & Entrepreneurship -->
+                <div class="relative lg:pl-12">
+                    <div class="absolute -left-[9px] top-0 h-5 w-5 rounded-full bg-mckinsey-blue border-4 border-white"></div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 hover:border-mckinsey-blue/30 transition-colors">
+                        <span class="text-sm font-semibold text-mckinsey-blue uppercase tracking-wide">Luxury Retail & Entrepreneurship</span>
+                        <h3 class="text-xl font-serif font-bold text-mckinsey-navy mt-1">Brand Manager & Founder</h3>
+                        <p class="text-gray-500 text-sm mb-4">Focus: Italdizayn, Coincasa, Private Ventures</p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2 text-sm">
+                            <li>Managed strategic operations for <strong>Italdizayn</strong> and <strong>Coincasa</strong>, overseeing brand positioning and visual merchandising for luxury home decor.</li>
+                            <li>Launched an independent <strong>Outlet Store</strong>, developing a 17-step market entry strategy and managing a 200+ model product matrix.</li>
+                            <li>Orchestrated market entry for international hygiene brands (Predo, Newday, PredoX), optimizing logistics for maximum margin.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Role 4: Telecommunications -->
+                <div class="relative lg:pl-12">
+                    <div class="absolute -left-[9px] top-0 h-5 w-5 rounded-full bg-gray-400 border-4 border-white"></div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 hover:border-mckinsey-blue/30 transition-colors">
+                        <span class="text-sm font-semibold text-gray-500 uppercase tracking-wide">Telecommunications Strategy</span>
+                        <h3 class="text-xl font-serif font-bold text-mckinsey-navy mt-1">Strategic Marketing Consultant</h3>
+                        <p class="text-gray-500 text-sm mb-4">Focus: Bakcell | Azerbaijan</p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2 text-sm">
+                            <li>Developed creative briefs for major national campaigns (e.g., "Novruz Bayram Lottery") for <strong>Bakcell</strong>.</li>
+                            <li>Supported the strategic communication for the massive rebranding of 200 stores and service centers.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio / Case Studies -->
+    <section id="portfolio" class="py-20 bg-mckinsey-navy text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-16">
+                <h2 class="font-serif text-3xl font-bold mb-4">Selected Case Studies</h2>
+                <p class="text-gray-300 max-w-2xl">A deep dive into specific projects demonstrating commercial rigor and strategic foresight.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                
+                <!-- Project 1: Industrial (Star Gulf) -->
+                <div class="bg-white text-mckinsey-text p-8 rounded-sm transform lg:-translate-y-4 shadow-xl border-l-4 border-mckinsey-blue">
+                    <div class="h-1 w-12 bg-mckinsey-blue mb-6"></div>
+                    <h3 class="text-xl font-serif font-bold text-mckinsey-navy mb-4">Industrial Staffing: Star Gulf & KCA Deutag</h3>
+                    <p class="text-gray-600 text-sm mb-6 min-h-[80px]">
+                        Managed the <strong>Star Gulf</strong> medical staffing model ($511k value) and led the cross-border win for <strong>KCA DEUTAG</strong> via rapid MERP development.
+                    </p>
+                    <div class="space-y-4 border-t border-gray-200 pt-6">
+                        <div>
+                            <span class="block text-xs uppercase tracking-wider text-gray-500">Contract Value</span>
+                            <span class="text-lg font-semibold text-mckinsey-blue">$511,296.00 (Star Gulf)</span>
+                        </div>
+                        <div>
+                            <span class="block text-xs uppercase tracking-wider text-gray-500">Operational Margin</span>
+                            <span class="text-sm text-gray-600">40% Gross Margin on medical staffing.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: FMCG (Unilever & Henkel) -->
+                <div class="bg-mckinsey-navy border border-gray-700 p-8 rounded-sm hover:bg-[#0a273d] transition-colors">
+                    <div class="h-1 w-12 bg-mckinsey-blue mb-6"></div>
+                    <h3 class="text-xl font-serif font-bold mb-4">Global Brand Launch: Unilever & Henkel</h3>
+                    <p class="text-gray-400 text-sm mb-6 min-h-[80px]">
+                        Launched <strong>Dove/Rexona</strong> and <strong>Henkel Laundry & Detergents</strong> (Persil, Clin, Bref) into the Azerbaijan market. Secured 60% aerosol shelf share and executed the "2009 Master Plan".
+                    </p>
+                    <div class="space-y-4 border-t border-gray-700 pt-6">
+                        <div>
+                            <span class="block text-xs uppercase tracking-wider text-gray-500">Execution</span>
+                            <span class="text-lg font-semibold text-white">"Perfect Store" Strategy</span>
+                        </div>
+                        <div>
+                            <span class="block text-xs uppercase tracking-wider text-gray-500">Pricing Strategy</span>
+                            <span class="text-sm text-gray-300">Aggressive positioning: <strong>-2% to -4%</strong> vs competitors.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Trade Marketing (Azersun) -->
+                <div class="bg-mckinsey-navy border border-gray-700 p-8 rounded-sm hover:bg-[#0a273d] transition-colors">
+                    <div class="h-1 w-12 bg-mckinsey-blue mb-6"></div>
+                    <h3 class="text-xl font-serif font-bold mb-4">FMCG Trade Strategy: Azersun</h3>
+                    <p class="text-gray-400 text-sm mb-6 min-h-[80px]">
+                        Designed high-impact trade campaigns (Ramazan Packages) and managed segmentation for 300+ SKUs across tea, oil, and staples.
+                    </p>
+                    <div class="space-y-4 border-t border-gray-700 pt-6">
+                        <div>
+                            <span class="block text-xs uppercase tracking-wider text-gray-500">Campaigns</span>
+                            <span class="text-lg font-semibold text-white">Bereket, Lezzet, Ziyafet Packs</span>
+                        </div>
+                        <div>
+                            <span class="block text-xs uppercase tracking-wider text-gray-500">Tactics</span>
+                            <span class="text-sm text-gray-300">Visual Merchandising (Parasite Stands) & 11+1 Promotions.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Telecom (Bakcell) -->
+                <div class="bg-white text-mckinsey-text p-8 rounded-sm shadow-xl border-l-4 border-mckinsey-navy">
+                    <div class="h-1 w-12 bg-mckinsey-blue mb-6"></div>
+                    <h3 class="text-xl font-serif font-bold text-mckinsey-navy mb-4">Telecommunications Strategy: Bakcell</h3>
+                    <p class="text-gray-600 text-sm mb-6 min-h-[80px]">
+                        Developed strategic creative briefs for national campaigns ("Novruz Bayram Lottery") supporting the "Get Closer" brand positioning.
+                    </p>
+                    <div class="space-y-4 border-t border-gray-200 pt-6">
+                        <div>
+                            <span class="block text-xs uppercase tracking-wider text-gray-500">Scope</span>
+                            <span class="text-lg font-semibold text-mckinsey-blue">Rebranding 200 Stores</span>
+                        </div>
+                        <div>
+                            <span class="block text-xs uppercase tracking-wider text-gray-500">Objective</span>
+                            <span class="text-sm text-gray-600">Increase load penetration during key holiday periods.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Outlet Store -->
+                <div class="bg-white text-mckinsey-text p-8 rounded-sm shadow-xl border-l-4 border-mckinsey-blue">
+                    <div class="h-1 w-12 bg-mckinsey-blue mb-6"></div>
+                    <h3 class="text-xl font-serif font-bold text-mckinsey-navy mb-4">Entrepreneurial Retail: Outlet Store Launch</h3>
+                    <p class="text-gray-600 text-sm mb-6 min-h-[80px]">
+                        End-to-end retail launch from strategic planning to financial budgeting and inventory management.
+                    </p>
+                    <div class="space-y-4 border-t border-gray-200 pt-6">
+                        <div>
+                            <span class="block text-xs uppercase tracking-wider text-gray-500">Strategy</span>
+                            <span class="text-lg font-semibold text-mckinsey-blue">17-Step Market Entry</span>
+                        </div>
+                        <div>
+                            <span class="block text-xs uppercase tracking-wider text-gray-500">Product Matrix</span>
+                            <span class="text-sm text-gray-600">200+ models across Men's/Women's categories.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: Hygiene Brands -->
+                <div class="bg-mckinsey-navy border border-gray-700 p-8 rounded-sm hover:bg-[#0a273d] transition-colors">
+                    <div class="h-1 w-12 bg-mckinsey-blue mb-6"></div>
+                    <h3 class="text-xl font-serif font-bold mb-4">Market Entry: Hygiene & Home Care</h3>
+                    <p class="text-gray-400 text-sm mb-6 min-h-[80px]">
+                        Launch and distribution strategy for <strong>Predo Baby, Newday, Slipers, and PredoX</strong> brands.
+                    </p>
+                    <div class="space-y-4 border-t border-gray-700 pt-6">
+                        <div>
+                            <span class="block text-xs uppercase tracking-wider text-gray-500">Categories</span>
+                            <span class="text-lg font-semibold text-white">Baby, Adult, Home Care</span>
+                        </div>
+                        <div>
+                            <span class="block text-xs uppercase tracking-wider text-gray-500">Logistics</span>
+                            <span class="text-sm text-gray-300">Optimized 40 HC truck load planning for maximum margin.</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Merchandising & Trade Marketing Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-3xl text-mckinsey-navy font-bold">Trade Marketing Excellence</h2>
+                <p class="mt-4 text-gray-600">Deep expertise in visual merchandising, promotional strategies, and category management.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Ramazan Packages -->
+                <div class="bg-mckinsey-light p-6 rounded-lg">
+                    <div class="h-1 w-12 bg-mckinsey-blue mb-4"></div>
+                    <h3 class="font-serif font-bold text-mckinsey-navy mb-3">Seasonal Campaign Strategy</h3>
+                    <p class="text-sm text-gray-600 mb-4">Developed tiered Ramazan Package offerings for Azersun Holding.</p>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex justify-between">
+                            <span class="font-medium">Bereket Package</span>
+                            <span class="text-mckinsey-blue">10 SKUs | 14.90 AZN</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="font-medium">Lezzet Package</span>
+                            <span class="text-mckinsey-blue">18 SKUs | 19.90 AZN</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="font-medium">Ziyafet Package</span>
+                            <span class="text-mckinsey-blue">24 SKUs | 39.90 AZN</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visual Merchandising -->
+                <div class="bg-mckinsey-light p-6 rounded-lg">
+                    <div class="h-1 w-12 bg-mckinsey-blue mb-4"></div>
+                    <h3 class="font-serif font-bold text-mckinsey-navy mb-3">Visual Merchandising Tactics</h3>
+                    <p class="text-sm text-gray-600 mb-4">Implemented strategic in-store presence through specialized displays.</p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center"><i class="fas fa-check text-mckinsey-blue mr-2"></i>Parasite Stands</li>
+                        <li class="flex items-center"><i class="fas fa-check text-mckinsey-blue mr-2"></i>PVC Relief Panels</li>
+                        <li class="flex items-center"><i class="fas fa-check text-mckinsey-blue mr-2"></i>Gondola End Displays</li>
+                        <li class="flex items-center"><i class="fas fa-check text-mckinsey-blue mr-2"></i>Eye-Level Shelf Positioning</li>
+                    </ul>
+                </div>
+
+                <!-- Promotional Mechanics -->
+                <div class="bg-mckinsey-light p-6 rounded-lg">
+                    <div class="h-1 w-12 bg-mckinsey-blue mb-4"></div>
+                    <h3 class="font-serif font-bold text-mckinsey-navy mb-3">Promotional Mechanics</h3>
+                    <p class="text-sm text-gray-600 mb-4">Designed Buy-X-Get-Y promotions to drive volume.</p>
+                    <div class="space-y-3">
+                        <div class="bg-white p-3 rounded">
+                            <span class="text-xs uppercase tracking-wider text-gray-500">Basmati Rice Promo</span>
+                            <p class="font-semibold text-mckinsey-navy">11+1 Mechanic</p>
+                            <p class="text-sm text-gray-600">Target: 335.8 Tons</p>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <span class="text-xs uppercase tracking-wider text-gray-500">Product Segmentation</span>
+                            <p class="font-semibold text-mckinsey-navy">3-Cluster Model</p>
+                            <p class="text-sm text-gray-600">300+ SKUs managed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Footer -->
+    <footer id="contact" class="bg-white border-t border-gray-200 pt-20 pb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="font-serif text-3xl text-mckinsey-navy font-bold mb-8">Get in Touch</h2>
+            <p class="text-gray-600 mb-12 max-w-xl mx-auto">
+                Available for senior leadership roles in business development and operations strategy. Let's discuss how I can drive value for your organization.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-8 mb-12">
+                <a href="mailto:elnaramamedli@gmail.com" class="flex items-center text-mckinsey-navy hover:text-mckinsey-blue transition-colors">
+                    <i class="fas fa-envelope mr-3 text-xl"></i>
+                    <span class="font-medium">elnaramamedli@gmail.com</span>
+                </a>
+                <a href="tel:+994503777061" class="flex items-center text-mckinsey-navy hover:text-mckinsey-blue transition-colors">
+                    <i class="fas fa-phone mr-3 text-xl"></i>
+                    <span class="font-medium">(+994) 50 377 7061</span>
+                </a>
+                <a href="https://www.linkedin.com/in/elnara-mamedli-2a60b41a/" target="_blank" class="flex items-center text-mckinsey-navy hover:text-mckinsey-blue transition-colors">
+                    <i class="fab fa-linkedin mr-3 text-xl"></i>
+                    <span class="font-medium">LinkedIn Profile</span>
+                </a>
+            </div>
+            <div class="text-gray-400 text-sm border-t border-gray-100 pt-8">
+                © 2026 Elnara Mammadli. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
