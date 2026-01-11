@@ -99,8 +99,11 @@
         </div>
         <div class="coming-soon">🚀 Coming Soon</div>
         <footer>
-            <p>&copy; 2026 Elnara Mammedli. All rights reserved.</p>
+            <p>&copy; <span id="year"></span> Elnara Mammedli. All rights reserved.</p>
         </footer>
     </div>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
