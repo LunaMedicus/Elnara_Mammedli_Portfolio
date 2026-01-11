@@ -30,14 +30,30 @@ if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
         
-        // Get form values
-        const formData = new FormData(this);
+        // Get the submit button
+        const submitBtn = this.querySelector('button[type="submit"]');
+        const originalText = submitBtn.textContent;
         
-        // Show success message (in a real application, this would send data to a server)
-        alert('Thank you for your message! I will get back to you soon.');
+        // Show loading state
+        submitBtn.textContent = 'Sending...';
+        submitBtn.disabled = true;
         
-        // Reset form
-        this.reset();
+        // Simulate form submission (in a real application, this would send data to a server)
+        setTimeout(() => {
+            // Show success state
+            submitBtn.textContent = 'Message Sent!';
+            submitBtn.style.backgroundColor = '#10b981';
+            
+            // Reset form
+            this.reset();
+            
+            // Reset button after 3 seconds
+            setTimeout(() => {
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+                submitBtn.style.backgroundColor = '';
+            }, 3000);
+        }, 1000);
     });
 }
 
